@@ -89,6 +89,7 @@ form h1{
     text-transform: uppercase;
 
     cursor: text;
+    pointer-events: none;
 
     transition: all 300ms ease-out;
 }
@@ -177,4 +178,19 @@ form p a{
 
 form p a:hover{
     color: var(--color-mediumblue);
+}
+
+/* Blobs */
+.blobtop{
+    position: absolute;
+
+    top: -10rem;
+    right: -1rem;
+}
+
+.blobbot{
+    position: absolute;
+
+    bottom: -10rem;
+    left: -1rem;
 }

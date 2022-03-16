@@ -5,6 +5,7 @@
 :root{
     font-size: 10px;
     --color-stronggrey: #919293;
+    --color-mediumgrey: #C4C4C4;
     --color-weakgrey:   #EAEEF0;
     --color-strongblue: #239DFB;
     --color-mediumblue: #44ABFB;
