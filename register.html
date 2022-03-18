@@ -20,26 +20,26 @@
             </div>
             <div class="form-inputs"> 
                 <div class="float">
-                    <input type="text" id="inputUsername" placeholder="">
-                    <label>Nome de usuário</label>
+                    <input type="text" id="inputUsername" autocomplete="off" required>
                     <i class="fa-solid fa-user"></i>
+                    <label for="inputUsername">Nome de usuário</label>
                 </div>
                 <div class="float">
-                    <input type="text" id="inputUsername" placeholder="">
-                    <label>E-Mail</label>
+                    <input type="text" id="inputEmail" autocomplete="off" required>
                     <i class="fa-solid fa-at"></i>
+                    <label>E-Mail</label>
                 </div>
                 <div class="float">
-                    <input type="text" id="inputPassword" placeholder="">
+                    <input type="password" id="inputPassword" autocomplete="off" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <i class="fa-solid fa-eye-slash"></i>
                     <label>Senha</label>
-                    <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-eye-slash"></i>
                 </div>
                 <div class="float">
-                    <input type="text" id="inputPasswordConfirm" placeholder="">
-                    <label>Confirme sua senha</label>
+                    <input type="password" id="inputPasswordConfirm" autocomplete="off" required>
                     <i class="fa-solid fa-lock"></i>
                     <i class="fa-solid fa-eye-slash"></i>
+                    <label>Confirme sua senha</label>
                 </div>
             </div>
             <button type="button">Registrar</button>

@@ -1,10 +1,7 @@
-/* "Configs" */
-*, html{
-    overflow: hidden;
-}
-
+/* "Configs */
 body{
     background-color: var(--color-lightblue);
+    overflow: hidden;
 }
 
 section{
@@ -16,6 +13,21 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Blobs */
+.blobtop{
+    position: absolute;
+
+    top: -10rem;
+    right: -1rem;
+}
+
+.blobbot{
+    position: absolute;
+
+    bottom: -10rem;
+    left: -1rem;
 }
 
 /* Form */
@@ -46,21 +58,21 @@ form h1{
     display: flex;
     flex-direction: column;
 
-    gap: 2rem;
+    gap: 3rem;
     margin-bottom: 5.5rem;
 }
 
 .float{
+    width: 100%;
     position: relative;
 }
 
 .float input{
     width: 100%;
-    height: fit-content;
 
     display: block;
 
-    padding: 0.2rem 2.8rem;
+    padding: 0.5rem 2.8rem;
 
     font-size: 1.8rem;
     color: var(--color-stronggrey);
@@ -73,14 +85,15 @@ form h1{
 
     transition: all 300ms ease-out;
 }
-.float input:focus{
+input:focus,
+input:valid {
     border-bottom: 2.5px solid var(--color-mediumblue);
 }
 
-.float label{
+label{
     position: absolute;
 
-    top: 6%;
+    top: 20%;
     left: 2.8rem;
 
     font-size: 1.8rem;
@@ -93,30 +106,32 @@ form h1{
 
     transition: all 300ms ease-out;
 }
-.float input:focus + label{
+input:focus ~ label, 
+input:valid ~ label {
     font-size: 1.2rem;
     color: var(--color-mediumblue);
 
-    top: -45%;
+    top: -1rem;
 }
 
 .fa-solid.fa-user, .fa-solid.fa-lock, .fa-solid.fa-at{
     position: absolute;
 
-    top: 14%;
+    top: 28%;
     left: 0.6rem;
 
     font-size: 1.6rem;
     color: var(--color-stronggrey);
+
+    transition: all 300ms ease-out;
 }
-.float input:focus + .fa-solid.fa-user,
-.float input:focus + .fa-solid.fa-lock,
-.float input:focus + .fa-solid.fa-at{
+.float input:focus ~ .fa-solid.fa-user,
+.float input:focus ~ .fa-solid.fa-lock,
+.float input:focus ~ .fa-solid.fa-at{
     color: var(--color-mediumblue);
 }
 
 .fa-solid.fa-at{
-    top: 18%;
     left: 0.4rem;
     font-size: 1.8rem;
 }
@@ -124,7 +139,7 @@ form h1{
 .fa-solid.fa-eye-slash{
     position: absolute;
 
-    top: 20%;
+    top: 30%;
     right: 0.6rem;
 
     font-size: 1.6rem;
@@ -153,7 +168,6 @@ form button{
 
     transition: all 320ms ease-in;
 }
-
 form button:hover{
     background-color: var(--color-strongblue);
 }
@@ -175,22 +189,6 @@ form p a{
 
     transition: all 320ms ease;
 }
-
 form p a:hover{
     color: var(--color-mediumblue);
-}
-
-/* Blobs */
-.blobtop{
-    position: absolute;
-
-    top: -10rem;
-    right: -1rem;
-}
-
-.blobbot{
-    position: absolute;
-
-    bottom: -10rem;
-    left: -1rem;
 }
