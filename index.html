@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>BlueSneakers</title>
 </head>
 <body>
     <section>
-        <div class="circle"></div>
-        <header>
+        <div class="circle" data-aos="fade-left" data-aos-duration="1050"></div>
+        <header data-aos="fade-left" data-aos-duration="1050">
             <div class="nav-item">          
                 <a href="login.html">
                     <i class="fa-solid fa-user"></i>
@@ -20,7 +21,7 @@
             </div>
         </header>
         <div class="content">
-            <div class="textbox">
+            <div class="textbox" data-aos="fade-right" data-aos-duration="1050">
                 <h1> 
                     It's not just sneakers
                     <br>
@@ -31,11 +32,13 @@
                 </p>
                 <a href="login.html">Saiba mais</a>
             </div>
-            <div class="imgbox">
+            <div class="imgbox" data-aos="zoom-in-left" data-aos-duration="1050" data-aos-delay="250">
                 <img src="./assets/images/imgIndex.png" alt="Jordans">
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/bda47a69ea.js" crossorigin="anonymous"></script>
 </body>
 </html>
