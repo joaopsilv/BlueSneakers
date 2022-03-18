@@ -4,7 +4,7 @@
 ## Sobre
 <div align="justify">
 <div>Website produzido em razão do desejo de estudar e utilizar LocalStorage para a criação de telas de registro e de login.
-Ademais, aproveitando a oportunidade para o desenvolvimento de algumas telas com recursos que não usufruíra até então.</div>
+Ademais, aproveitando a oportunidade para o desenvolvimento de algumas telas com recursos estilísticos que não usufruíra até então.</div>
 <br>
 <div>Atualmente em processo de desenvolvimento - tanto em seu script quanto em seu estilo.
 Entretanto já apresenta responsividade eficiente na tela de home, responsividade parcial - até tablets - nas telas de registro e login, 
