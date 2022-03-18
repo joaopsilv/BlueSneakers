@@ -26,9 +26,11 @@
                     <label>E-Mail</label>
                 </div>
                 <div class="float">
-                    <input type="text" id="inputPassword" autocomplete="off" required>
+                    <input type="password" id="inputPassword" autocomplete="off" required>
                     <i class="fa-solid fa-lock"></i>
-                    <i class="fa-solid fa-eye-slash"></i>
+                    <div class="password-state">
+                        <i class="fa-solid fa-eye-slash" id="iconPassword"></i>
+                    </div>
                     <label>Senha</label>
                 </div>
             </div>
@@ -43,6 +45,8 @@
             </div>
         </form>
     </section>
+    <script src="./js/login.js"></script>
+    <script src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/bda47a69ea.js" crossorigin="anonymous"></script>
 </body>
 </html>

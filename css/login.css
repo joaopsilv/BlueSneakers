@@ -114,7 +114,7 @@ input:valid ~ label {
     top: -1rem;
 }
 
-.fa-solid.fa-user, .fa-solid.fa-lock, .fa-solid.fa-at{
+.fa-user, .fa-lock, .fa-at{
     position: absolute;
 
     top: 28%;
@@ -125,26 +125,42 @@ input:valid ~ label {
 
     transition: all 300ms ease-out;
 }
-.float input:focus ~ .fa-solid.fa-user,
-.float input:focus ~ .fa-solid.fa-lock,
-.float input:focus ~ .fa-solid.fa-at{
+.float input:focus ~ .fa-user,
+.float input:focus ~ .fa-lock,
+.float input:focus ~ .fa-at,
+.float input:valid ~ .fa-user,
+.float input:valid ~ .fa-lock,
+.float input:valid ~ .fa-at{
     color: var(--color-mediumblue);
 }
 
-.fa-solid.fa-at{
+.fa-at{
     left: 0.4rem;
     font-size: 1.8rem;
 }
 
-.fa-solid.fa-eye-slash{
+.password-state, .passwordconfirm-state{
     position: absolute;
 
-    top: 30%;
+    top: 35%;
     right: 0.6rem;
 
+    cursor: pointer;
+}
+
+.password-state, .passwordconfirm-state i{
+    transition: all 300ms ease-out;
+}
+
+.fa-eye-slash{
     font-size: 1.6rem;
     color: var(--color-stronggrey);
 }
+.fa-eye{
+    font-size: 1.6rem;
+    color: var(--color-mediumblue);
+}
+
 
 form button{
     width: 100%;
