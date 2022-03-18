@@ -1,7 +1,7 @@
 /* Password Reveal */
-let inputPassword = document.getElementById("inputPassword")
-
 let passwordState = document.getElementsByClassName("password-state")[0]
+
+let inputPassword = document.getElementById("inputPassword")
 let iconP = document.getElementById("iconPassword")
 
 passwordState.addEventListener("click", ()=>{
@@ -17,9 +17,9 @@ passwordState.addEventListener("click", ()=>{
 })
 
 /* PasswordConfirm Reveal */
-let inputPasswordConfirm = document.getElementById("inputPasswordConfirm")
-
 let passwordConfirmState = document.getElementsByClassName("passwordconfirm-state")[0]
+
+let inputPasswordConfirm = document.getElementById("inputPasswordConfirm")
 let iconPC = document.getElementById("iconPasswordConfirm")
 
 passwordConfirmState.addEventListener("click", ()=>{
