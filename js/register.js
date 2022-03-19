@@ -12,41 +12,54 @@ let validPassword = false
 let validPasswordConfirm = false
 
 let uppercaseLetters = /[A-Z]/g
-let numbers = /[0-9]/g
+let numberscase = /[0-9]/g
+let emailcase = /[@]/g
 
-username.addEventListener("keypress", ()=>{  
-    if(username.value.length > 0){
-        validUsername = true
-    }
-    else{
+username.addEventListener("keyup", ()=>{  
+    if(username.value.length < 1){
         validUsername = false
     }
-})
-email.addEventListener("keypress", ()=>{
-    if(email.value.length > 0){
-        validEmail = true
-    }
     else{
+        validUsername = true
+    }
+})
+email.addEventListener("keyup", ()=>{
+    if(email.value.length < 1){
         validEmail = false
     }
-})
-password.addEventListener("keypress", ()=>{
-    if(password.value.length > 0 && password.value.length >= 8
-    && password.value.match(uppercaseLetters) && password.value.match(numbers)){
-        validPassword = true
+    else if(!email.value.match(emailcase)){
+        validEmail = false
     }
     else{
+        validEmail = true
+    }
+})
+password.addEventListener("keyup", ()=>{
+    if(password.value.length < 1){
         validPassword = false
     }
-})
-passwordConfirm.addEventListener("keypress", ()=>{
-    if(passwordConfirm.value.length > 0 && passwordConfirm.value.length >= 8
-    && passwordConfirm.value.match(uppercaseLetters) && passwordConfirm.value.match(numbers)
-    && passwordConfirm === password){
-        validPasswordConfirm = true
+    else if(!password.value.match(uppercaseLetters)){
+        validPassword = false
+    }
+    else if(!password.value.match(numberscase)){
+        validPassword = false
     }
     else{
+        validPassword = true
+    }
+})
+passwordConfirm.addEventListener("keyup", ()=>{
+    if(passwordConfirm.value.length < 1){
         validPasswordConfirm = false
+    }
+    else if(!passwordConfirm.value.match(uppercaseLetters)){
+        validPasswordConfirm = false
+    }
+    else if(!passwordConfirm.value.match(numberscase)){
+        validPasswordConfirm = false
+    }
+    else{
+        validPasswordConfirm = true
     }
 })
 
