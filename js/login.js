@@ -1,7 +1,6 @@
 /* Login */
 let login = document.getElementById("loginButton")
 
-
 let email = document.getElementById("inputEmail")
 let password = document.getElementById("inputPassword")
 

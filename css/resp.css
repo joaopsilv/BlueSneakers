@@ -1,0 +1,11 @@
+@media screen 
+and (max-width: 720px){
+}
+
+@media screen 
+and (max-width: 425px){
+    /* Home */
+    .card-img img{
+        width: 25rem;
+    }
+}
