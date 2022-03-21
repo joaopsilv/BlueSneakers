@@ -33,3 +33,4 @@ passwordConfirmState.addEventListener("click", ()=>{
         inputPasswordConfirm.type = "password"
     }
 })
+

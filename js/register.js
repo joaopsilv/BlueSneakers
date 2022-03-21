@@ -71,9 +71,24 @@ register.addEventListener("click", ()=>{
 
         localStorage.setItem("userList", JSON.stringify(userList))
 
-        alert("sucesso!")
+        popupSucess.classList.add("open-popup")
     }
     else{
-        alert("erro!")
+        popupError.classList.add("open-popup")
     }
+})
+
+/* Popups */
+let popupSucess = document.getElementById("popup-sucess")
+let popupError = document.getElementById("popup-error")
+
+let buttonSucess = document.getElementById("sucessButton")
+let buttonError = document.getElementById("errorButton")
+
+buttonSucess.addEventListener("click", ()=>{
+    window.location.href = "login.html"
+})
+
+buttonError.addEventListener("click", ()=>{
+    popupError.classList.remove("open-popup")
 })
