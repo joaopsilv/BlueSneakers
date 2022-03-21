@@ -229,7 +229,7 @@ form p a:hover{
 
     visibility: hidden;
 
-    transition: transform 600ms, top 600ms;
+    transition: all 600ms;
 }
 .open-popup{
     top: 50%;

@@ -1,6 +1,9 @@
 /* Register */
 let register = document.getElementById("registerButton")
 
+let popupSucess = document.getElementById("popup-sucess")
+let popupError = document.getElementById("popup-error")
+
 let username = document.getElementById("inputUsername")
 let email = document.getElementById("inputEmail")
 let password = document.getElementById("inputPassword")
@@ -79,9 +82,6 @@ register.addEventListener("click", ()=>{
 })
 
 /* Popups */
-let popupSucess = document.getElementById("popup-sucess")
-let popupError = document.getElementById("popup-error")
-
 let buttonSucess = document.getElementById("sucessButton")
 let buttonError = document.getElementById("errorButton")
 
