@@ -5,26 +5,27 @@ let login = document.getElementById("loginButton")
 let email = document.getElementById("inputEmail")
 let password = document.getElementById("inputPassword")
 
-let userList = []
-let userValid = {
-    user: ""
-    , email: ""
-    , password: ""
-}
-
-userList = JSON.parse(localStorage.getItem("userList"))
-
-userList.forEach((item) =>{
-    if (email.value == item.emailRegister && password.value == item.passwordRegister){
-        userValid = {
-            user: item.userRegister
-            , email: item.emailRegister
-            , password: item.passwordRegister
-        }
-    }
-})
 
 login.addEventListener("click", ()=>{
+    let userList = []
+    let userValid = {
+        user: ""
+        , email: ""
+        , password: ""
+    }
+    
+    userList = JSON.parse(localStorage.getItem("userList"))
+    
+    userList.forEach((item) =>{
+        if (email.value == item.emailRegister && password.value == item.passwordRegister){
+            userValid = {
+                user: item.userRegister
+                , email: item.emailRegister
+                , password: item.passwordRegister
+            }
+        }
+    })
+    
     if(email.value == userValid.email && password.value == userValid.password){
         if(email.value < 1 && password.value < 1){
             popupError.classList.add("open-popup")
