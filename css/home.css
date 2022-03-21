@@ -108,7 +108,7 @@ article:hover img{
 }
 
 .card-text h1, p{
-    color: #6b6b6b;
+    color: var(--color-hypergrey);
     font-size: 1.6rem;
 }
 
@@ -118,13 +118,12 @@ footer{
     align-items: center;
     justify-content: center;
 
-    background-color: var(--color-stronggrey);
+    background-color: var(--color-mediumgrey);
 
     height: 6.5rem;
 }
 
 footer h1{
-    color: var(--color-weakgrey);
+    color: var(--color-hypergrey);
     font-size: 1.8rem;
-    font-weight: normal;
 }

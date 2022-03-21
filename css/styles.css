@@ -4,6 +4,7 @@
 /* "Configs" */
 :root{
     font-size: 10px;
+    --color-hypergrey:  #6b6b6b;
     --color-stronggrey: #919293;
     --color-mediumgrey: #C4C4C4;
     --color-weakgrey:   #EAEEF0;
