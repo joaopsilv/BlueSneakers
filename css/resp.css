@@ -1,9 +1,136 @@
 @media screen 
-and (max-width: 720px){
+and (max-width: 768px){
+    /* Register & Login */
+    form{
+        width: 40rem;
+        padding: 4.5rem;
+    }
+
+    form h1{
+        font-size: 3.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .form-inputs{
+        margin-bottom: 4.2rem;
+    }
+
+    .float input{
+        font-size: 1.6rem;
+    }
+
+    label{
+        top: 22%;
+        font-size: 1.6rem;
+    }
+
+    form button{
+        font-size: 2.6rem;
+    }
+
+    form p{
+        font-size: 1.4rem;
+    }
+
+    /* Popups */
+    .popup-sucess, .popup-error{
+        width: 35rem;
+    }
+
+    .popup-sucess img, .popup-error img{
+        width: 14rem;
+        margin-top: -32%;
+    }
+
+    .popup-content h1{
+        font-size: 3rem;
+    }
+
+    .popup-content p{
+        font-size: 1.6rem;
+    }
+
+    /* Blobs */
+    .blobtop{
+        top: -30rem;
+        right: -15rem;
+    }
+
+    .blobbot{
+        bottom: -30rem;
+        left: -15rem;
+    }
 }
 
 @media screen 
 and (max-width: 425px){
+    /* Register & Login */
+    form{
+        width: 30rem;
+        padding: 3.5rem;
+    }
+
+    form h1{
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-inputs{
+        gap: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .float input{
+        font-size: 1.4rem;
+    }
+
+    label{
+        top: 30%;
+        font-size: 1.4rem;
+    }
+
+    form button{
+        font-size: 2.4rem;
+    }
+
+    form p{
+        font-size: 1.2rem;
+    }
+
+    /* Popups */
+    .popup-sucess, .popup-error{
+        width: 25rem;
+    }
+
+    .popup-sucess img, .popup-error img{
+        width: 10rem;
+        margin-top: -50%;
+    }
+
+    .popup-content{
+        gap: 2.6rem;
+        margin-top: 1.2rem;
+    }
+
+    .popup-content h1{
+        font-size: 3rem;
+    }
+
+    .popup-content p{
+        font-size: 1.4rem;
+    }
+
+    /* Blobs */
+    .blobtop{
+        top: -35rem;
+        right: -25rem;
+    }
+
+    .blobbot{
+        bottom: -38rem;
+        left: -25rem;
+    }
+
     /* Home */
     .card-img img{
         width: 25rem;
