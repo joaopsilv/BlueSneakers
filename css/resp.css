@@ -1,5 +1,95 @@
 @media screen 
+and (max-width: 1676px){
+    /* Index */
+    .circle{
+        right: -72rem;
+    }
+
+    .imgbox{
+        width: 70rem;
+    }
+}
+
+@media screen 
+and (max-width: 1440px){
+    /* Index */
+    .circle{
+        right: -90rem;
+        bottom: -32rem;
+    }
+
+    .imgbox{
+        width: 44rem;
+    }
+
+    .imgbox img{
+        width: 55rem;
+    }
+
+    .textbox h1{
+        font-size: 4.2rem;
+    }
+
+    .textbox p{
+        font-size: 2.4rem;
+    }
+    
+}
+
+@media screen 
+and (max-width: 1024px){
+    /* Index */
+    .content{
+        padding-left: 10rem;
+    }
+
+    .circle{
+        right: -100rem;
+        bottom: -34rem;
+    }
+
+    .imgbox{
+        width: 34rem;
+    }
+
+    .imgbox img{
+        width: 50rem;
+    }
+
+    .textbox h1{
+        font-size: 3.8rem;
+    }
+
+    .textbox p{
+        font-size: 2rem;
+    }
+    
+    .textbox a{
+        height: 6rem;
+        
+        font-size: 2.4rem;
+
+        margin-top: 1.4rem;
+    }
+}
+
+@media screen 
 and (max-width: 768px){
+    /* Index */
+    .content{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .circle{
+        right: -16rem;
+        bottom: -110rem;
+    }
+
+    .textbox{
+        max-width: 40rem;
+    }
+
     /* Register & Login */
     form{
         width: 40rem;
@@ -64,6 +154,36 @@ and (max-width: 768px){
 
 @media screen 
 and (max-width: 425px){
+    /* Index */
+    #homeheader{
+        padding: 0rem 2.2rem;
+    }
+
+    #homeheader a{
+        font-size: 1.8rem;
+    }
+
+    .content{
+        padding: 2rem;
+    }
+    
+    .imgbox img{
+        width: 40rem;
+    }
+    
+    .textbox h1{
+        font-size: 3.2rem;
+    }
+    
+    .textbox p{
+        font-size: 1.8rem;
+    }
+        
+    .textbox a{
+        width: 22rem;
+        font-size: 2.2rem;
+    }
+
     /* Register & Login */
     form{
         width: 30rem;
@@ -135,4 +255,43 @@ and (max-width: 425px){
     .card-img img{
         width: 25rem;
     }
+}
+
+@media screen 
+and (max-width: 375px){
+    /* Index */
+    #homeheader{
+        padding: 0rem 2.2rem;
+    }
+
+    #homeheader a{
+        font-size: 1.6rem;
+    }
+
+    .content{
+        padding: 2rem;
+    }
+    
+    .imgbox img{
+        width: 30rem;
+    }
+    
+    .textbox h1{
+        font-size: 2.6rem;
+    }
+    
+    .textbox p{
+        font-size: 1.4rem;
+    }
+        
+    .textbox a{
+        width: 22rem;
+        font-size: 2rem;
+    }
+
+    .circle{
+        right: -16rem;
+        bottom: -105rem;
+    }
+
 }

@@ -47,7 +47,6 @@ header a{
 
     transition: all 320ms ease;
 }
-
 header a:hover{
     color: var(--color-lightblue);
 }

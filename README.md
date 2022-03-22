@@ -19,4 +19,4 @@ Ademais, a oportunidade foi aproveitada para o desenvolver de algumas páginas c
 
 ## Links
 - <a href="https://www.figma.com/file/UXf9Ol62iXb08xLofhKQYi/BlueSneakers---LocalStorage-Trainning?node-id=0%3A1">Projeto no Figma</a>;
-- Site.
+- <a href="https://bluesneakers.netlify.app">Site</a>.
