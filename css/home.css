@@ -16,7 +16,8 @@ body::-webkit-scrollbar{
     
     background-color: var(--color-mediumgrey);
 
-    padding: 0.8rem 4rem; 
+    padding: 0.8rem 4rem;
+    padding-top: 1.2rem;
 
     border-bottom: 1.5px solid var(--color-stronggrey);
 }
@@ -26,6 +27,13 @@ body::-webkit-scrollbar{
     font-weight: bold;
     text-transform: uppercase;
     color: var(--color-hypergrey);
+
+    cursor: pointer;
+
+    transition: all 300ms ease-in-out;
+}
+.navbar-up label:hover{
+    color: var(--color-mediumblue);
 }
 
 .navbar-down{
@@ -50,6 +58,9 @@ body::-webkit-scrollbar{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
+    border-top: 1.5px solid var(--color-stronggrey);
+    border-bottom: 1.5px solid var(--color-stronggrey);
 }
 
 /* Main */
@@ -102,6 +113,11 @@ article{
     background-color: var(--color-mediumgrey);
 
     border: 1.5px solid var(--color-stronggrey);
+
+    transition: border 1s ease;
+}
+article:hover{
+    border: 1.5px solid var(--color-mediumblue);
 }
 
 .card-img{
@@ -115,7 +131,6 @@ article{
     transition: all 800ms ease;  
     filter: drop-shadow(0 0 1rem rgba(0,0,0,0.5));
 }
-
 article:hover img{
     transform: rotate(-10deg);
 }
@@ -132,6 +147,12 @@ article:hover img{
 .card-text h1, p{
     color: var(--color-hypergrey);
     font-size: 1.6rem;
+    
+    transition: all 600ms ease-in-out;
+}
+article:hover h1,
+article:hover p{
+    color: var(--color-strongblue);
 }
 
 /* Footer */
@@ -150,4 +171,90 @@ footer{
 footer h1{
     color: var(--color-hypergrey);
     font-size: 1.8rem;
+}
+
+/* Popup */
+.popup-profile{
+    position: fixed;
+
+    transform: translate(-50%, -50%) scale(0.1);
+    left: 50%;
+    top: 0;
+
+    background-color: var(--color-weakgrey);
+
+    width: 45rem;
+    padding: 4rem;
+    border-radius: 1.5rem;
+
+    text-align: center;
+
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+
+    visibility: hidden;
+
+    transition: all 600ms;
+}
+.open-popup{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    visibility: visible;
+}
+
+.popup-profile img{
+    width: 16rem;
+    margin-top: -28%;
+
+    filter: drop-shadow(0 0 1rem rgba(0,0,0,0.35));
+}
+
+.popup-content{
+    display: flex;
+    flex-direction: column;
+
+    gap: 3.4rem;
+    margin-top: 2rem;
+}
+
+.popup-content h1{
+    font-size: 4rem;
+    color: var(--color-mediumblue)
+}
+
+.popup-content p{
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--color-stronggrey);
+
+    margin-top: 0.4rem;
+}
+
+.popup-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-buttons button{
+    width: 45%;
+    height: 5.6rem;
+
+    border: none;
+    border-radius: 1.5rem;
+
+    background-color: var(--color-mediumblue);
+
+    color: white;
+    font-size: 2.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);
+
+    transition: all 320ms ease-in;
+}
+.popup-buttons button:hover{
+    background-color: var(--color-strongblue);
 }
