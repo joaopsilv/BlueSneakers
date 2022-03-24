@@ -5,40 +5,25 @@ let email = document.getElementById("inputEmail")
 let password = document.getElementById("inputPassword")
 
 login.addEventListener("click", ()=>{
-    let userList = []
-    let userValid = []
-    
-    userList = JSON.parse(localStorage.getItem("userList"))
-    
-    userList.forEach((user) =>{
-        if(email.value == user.emailRegister && password.value == user.passwordRegister){
-            userValid = [...userValid,{
-                    user: user.userRegister
-                    , email: user.emailRegister
-                    , password: user.passwordRegister
-                }
-            ]
-        }
-    })
+    let userList = JSON.parse(localStorage.getItem("userList"))
 
-    for(let i = 0; i < userValid.length; i++){
-        if(email.value == userValid[i].email && password.value == userValid[i].password){
-            if(email.value < 1 && password.value < 1){
-                popupError.classList.add("open-popup")
-            }
-            else{
-                popupSucess.classList.add("open-popup")
-            }
-        }
-        else{
-            popupError.classList.add("open-popup")
-        }
+    const userRequirements = (storageUser) =>{
+        return (email.value == storageUser.emailRegister && password.value == storageUser.passwordRegister)
     }
 
-    for(let i = 0; i < userValid.length; i++){
-        if(email.value == userValid[i].email && password.value == userValid[i].password){
+    const userValid = userList.some(userRequirements)
+
+    if(userValid){
+        popupSucess.classList.add("open-popup")
+    }
+    else{
+        popupError.classList.add("open-popup")    
+    }
+    
+    for(let i = 0; i < userList.length; i++){
+        if(email.value == userList[i].emailRegister && password.value == userList[i].passwordRegister){
             localStorage.setItem("logUser", true)
-            localStorage.setItem("username", userValid[i].user)
+            localStorage.setItem("username", userList[i].userRegister)
         }
     }
 })

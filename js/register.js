@@ -16,7 +16,7 @@ let numberscase = /[0-9]/g
 let emailcase = /[@]/g
 
 username.addEventListener("keyup", ()=>{  
-    if(username.value.length < 1){
+    if(username.value == ""){
         validUsername = false
     }
     else{
@@ -24,7 +24,7 @@ username.addEventListener("keyup", ()=>{
     }
 })
 email.addEventListener("keyup", ()=>{
-    if(email.value.length < 1){
+    if(email.value == ""){
         validEmail = false
     }
     else if(!email.value.match(emailcase)){
@@ -35,7 +35,7 @@ email.addEventListener("keyup", ()=>{
     }
 })
 password.addEventListener("keyup", ()=>{
-    if(password.value.length < 1){
+    if(password.value == ""){
         validPassword = false
     }
     else if(!password.value.match(uppercaseLetters)){
@@ -46,11 +46,10 @@ password.addEventListener("keyup", ()=>{
     }
     else{
         validPassword = true
-        labelPassword.innerHTML = ""
     }
 })
 passwordConfirm.addEventListener("keyup", ()=>{
-    if(passwordConfirm.value.length < 1){
+    if(passwordConfirm.value == ""){
         validPasswordConfirm = false
     }
     else if(!passwordConfirm.value.match(uppercaseLetters)){
