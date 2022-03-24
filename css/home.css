@@ -9,7 +9,26 @@ body::-webkit-scrollbar{
 }
   
 /* Header */
-.navbar{
+.navbar-up{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    background-color: var(--color-mediumgrey);
+
+    padding: 0.8rem 4rem; 
+
+    border-bottom: 1.5px solid var(--color-stronggrey);
+}
+
+.navbar-up label{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-hypergrey);
+}
+
+.navbar-down{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,16 +36,9 @@ body::-webkit-scrollbar{
     padding: 1.5rem;
 }
 
-.navbar h1{
+.navbar-down h1{
     font-size: 2.6rem;
     color: var(--color-mediumblue);
-}
-
-.navbar label{
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--color-hypergrey);
 }
 
 .imgheader{
@@ -88,6 +100,8 @@ article{
     border-radius: 0.5rem;
 
     background-color: var(--color-mediumgrey);
+
+    border: 1.5px solid var(--color-stronggrey);
 }
 
 .card-img{
@@ -112,6 +126,7 @@ article:hover img{
 
     padding: 0 5%;
     padding-bottom: 5%;
+    
 }
 
 .card-text h1, p{
@@ -128,6 +143,8 @@ footer{
     background-color: var(--color-mediumgrey);
 
     height: 6.5rem;
+
+    border-top: 1.5px solid var(--color-stronggrey);
 }
 
 footer h1{
