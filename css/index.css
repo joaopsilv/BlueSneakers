@@ -40,19 +40,15 @@ header a{
     text-decoration: none;
     text-transform: uppercase;
 
-    color: var(--color-stronggrey);
-
     font-size: 2rem;
     font-weight: bold;
+
+    color: var(--color-stronggrey);
 
     transition: all 320ms ease;
 }
 header a:hover{
     color: var(--color-lightblue);
-}
-
-.fa-solid, .fa-user{
-    font-size: 1.5rem;
 }
 
 /* Section - Main */

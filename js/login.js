@@ -4,37 +4,42 @@ let login = document.getElementById("loginButton")
 let email = document.getElementById("inputEmail")
 let password = document.getElementById("inputPassword")
 
-
 login.addEventListener("click", ()=>{
     let userList = []
-    let userValid = {
-        user: ""
-        , email: ""
-        , password: ""
-    }
+    let userValid = []
     
     userList = JSON.parse(localStorage.getItem("userList"))
     
-    userList.forEach((item) =>{
-        if (email.value == item.emailRegister && password.value == item.passwordRegister){
-            userValid = {
-                user: item.userRegister
-                , email: item.emailRegister
-                , password: item.passwordRegister
-            }
+    userList.forEach((user) =>{
+        if(email.value == user.emailRegister && password.value == user.passwordRegister){
+            userValid = [...userValid,{
+                    user: user.userRegister
+                    , email: user.emailRegister
+                    , password: user.passwordRegister
+                }
+            ]
         }
     })
-    
-    if(email.value == userValid.email && password.value == userValid.password){
-        if(email.value < 1 && password.value < 1){
-            popupError.classList.add("open-popup")
+
+    for(let i = 0; i < userValid.length; i++){
+        if(email.value == userValid[i].email && password.value == userValid[i].password){
+            if(email.value < 1 && password.value < 1){
+                popupError.classList.add("open-popup")
+            }
+            else{
+                popupSucess.classList.add("open-popup")
+            }
         }
         else{
-            popupSucess.classList.add("open-popup")
+            popupError.classList.add("open-popup")
         }
     }
-    else{
-        popupError.classList.add("open-popup")
+
+    for(let i = 0; i < userValid.length; i++){
+        if(email.value == userValid[i].email && password.value == userValid[i].password){
+            localStorage.setItem("logUser", true)
+            localStorage.setItem("username", userValid[i].user)
+        }
     }
 })
 
