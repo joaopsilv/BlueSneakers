@@ -236,6 +236,8 @@ form p a:hover{
     visibility: hidden;
 
     transition: all 600ms;
+
+    z-index: 10;
 }
 .open-popup{
     top: 50%;
@@ -294,4 +296,18 @@ form p a:hover{
 }
 .popup-content button:hover{
     background-color: var(--color-strongblue);
+}
+
+.dark-bg{
+    position: absolute;
+
+    width: 100%;
+    aspect-ratio: 1;
+
+    background-color: rgba(0,0,0,0.35);
+
+    visibility: hidden;
+}
+.open-bg{
+    visibility: visible;
 }

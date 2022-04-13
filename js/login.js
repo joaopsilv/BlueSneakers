@@ -15,9 +15,11 @@ login.addEventListener("click", ()=>{
 
     if(userValid){
         popupSucess.classList.add("open-popup")
+        popupBG.classList.add("open-bg")
     }
     else{
-        popupError.classList.add("open-popup")    
+        popupError.classList.add("open-popup")
+        popupBG.classList.add("open-bg")    
     }
     
     for(let i = 0; i < userList.length; i++){
@@ -31,6 +33,7 @@ login.addEventListener("click", ()=>{
 /* Popups */
 let popupSucess = document.getElementById("popup-sucess")
 let popupError = document.getElementById("popup-error")
+let popupBG = document.getElementById("popup-bg")
 
 let buttonSucess = document.getElementById("sucessButton")
 let buttonError = document.getElementById("errorButton")
@@ -41,4 +44,5 @@ buttonSucess.addEventListener("click", ()=>{
 
 buttonError.addEventListener("click", ()=>{
     popupError.classList.remove("open-popup")
+    popupBG.classList.remove("open-bg")
 })

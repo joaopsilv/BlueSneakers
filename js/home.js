@@ -5,6 +5,7 @@ labelName.innerHTML = localStorage.getItem("username")
 
 /* Popups */
 let popup = document.getElementById("popup-profile")
+let popupBG = document.getElementById("popup-bg")
 
 let popupTitle = document.getElementById("popup-title")
 let popupText = document.getElementById("popup-text")
@@ -16,10 +17,16 @@ popupTitle.innerHTML = "Olá, " + localStorage.getItem("username") + "!" + "<p>Q
 
 labelName.addEventListener("click", ()=>{
     popup.classList.add("open-popup")
+    popupBG.classList.add("open-bg")
+
+    document.documentElement.style.overflow = 'hidden';
 })
 
 buttonStay.addEventListener("click", ()=>{
     popup.classList.remove("open-popup")
+    popupBG.classList.remove("open-bg")
+
+    document.documentElement.style.overflow = 'auto';
 })
 
 buttonOut.addEventListener("click", ()=>{
